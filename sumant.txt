@@ -1,0 +1,132 @@
+I am sumant.txt
+
+
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git log
+commit 409acabaa1d2933401edbd30273b25d283131c1a (HEAD -> master)
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Tue Aug 12 13:22:32 2025 +0530
+
+    UI Completed
+
+commit 2363c0c48bc185a93e24def32716a1c59235e22a
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Tue Aug 12 13:19:04 2025 +0530
+
+    initial commit
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+        deleted:    2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git restore 2.txt
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git add sumant.txt
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sumant.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git commit -m "Added file sumant"
+[master a0142b6] Added file sumant
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sumant.txt
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git log
+commit a0142b6fcd5dcb2e4f81d7f18ade19d58122cb82 (HEAD -> master)
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Wed Aug 13 18:05:44 2025 +0530
+
+    Added file sumant
+
+commit 409acabaa1d2933401edbd30273b25d283131c1a
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Tue Aug 12 13:22:32 2025 +0530
+
+    UI Completed
+
+commit 2363c0c48bc185a93e24def32716a1c59235e22a
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Tue Aug 12 13:19:04 2025 +0530
+
+    initial commit
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git clone https://github.com/vedic-lang/vedic-lang.github.io
+Cloning into 'vedic-lang.github.io'...
+remote: Enumerating objects: 873, done.
+remote: Counting objects: 100% (75/75), done.
+remote: Compressing objects: 100% (63/63), done.
+remote: Total 873 (delta 28), reused 25 (delta 11), pack-reused 798 (from 1)
+Receiving objects: 100% (873/873), 4.75 MiB | 2.14 MiB/s, done.
+Resolving deltas: 100% (356/356), done.
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git log
+commit a0142b6fcd5dcb2e4f81d7f18ade19d58122cb82 (HEAD -> master)
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Wed Aug 13 18:05:44 2025 +0530
+
+    Added file sumant
+
+commit 409acabaa1d2933401edbd30273b25d283131c1a
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Tue Aug 12 13:22:32 2025 +0530
+
+    UI Completed
+
+commit 2363c0c48bc185a93e24def32716a1c59235e22a
+Author: Arya Sumant <studywithpwno.1@gmail.com>
+Date:   Tue Aug 12 13:19:04 2025 +0530
+
+    initial commit
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git log --oneline
+a0142b6 (HEAD -> master) Added file sumant
+409acab UI Completed
+2363c0c initial commit
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$

@@ -1,0 +1,144 @@
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git init
+Initialized empty Git repository in F:/Data Science Course CWH/Git Tutorial/.git
+/
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+        2.txt
+        3.txt
+        4.txt
+        5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+        2.txt
+        3.txt
+        4.txt
+        5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git add 1.txt
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+        3.txt
+        4.txt
+        5.txt
+
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git add .
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+        new file:   2.txt
+        new file:   3.txt
+        new file:   4.txt
+        new file:   5.txt
+
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git commit -m "initial commit"
+[master (root-commit) 2363c0c] initial commit
+ 5 files changed, 6 insertions(+)
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+ create mode 100644 3.txt
+ create mode 100644 4.txt
+ create mode 100644 5.txt
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+        modified:   2.txt
+        modified:   4.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git add 1.txt 4.txt
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   1.txt
+        modified:   4.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   2.txt
+
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git commit -m "UI Completed"
+[master 409acab] UI Completed
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$   git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ git restore 4.txt
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$ ^C
+
+MY PC@DESKTOP-009MA0D MINGW64 /f/Data Science Course CWH/Git Tutorial (master)
+$
